@@ -16,14 +16,14 @@ const reviews = [
     {
         id: 3,
         name: "scotty pickles",
-        image: "https://cdn.pixabay.com/photo/2014/05/30/17/37/hipster-358479_1280.jpg",
+        image: "https://previews.dropbox.com/p/thumb/ACLBL72cep3rInciI3waizrdB8-DGWfRNfJ1UtZPepa2R-L-1lcHRVLbi1Ycqy9sNjeCqVfz0nlR3EcOjypsrl40W9N7e-akSuR_INNv_XXU_wLyBSaq9T4wGZ5_5LYolGSi1lGc4GbAl48MbEqf6LWtRCQ_Tk-CdC9mH-G0PiN7LUSQ0P7RfbijTS1tfT0kwdfCL83t0YAnmAozSzg_fzfk4XFsGRCa38qRrebUdtt1zyR39_vTgOLL7xBtPGifGFTnVa6DXEObDk__AZUVR7272HOlS4iF2SBU_dn91mlsw7GtI6Scb_PkA5bQ61k4agWYz4A9zzss36SpHWr9t33I/p.jpeg",
         job: "web developer",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum odio a consectetur posuere. Integer dapibus, nulla ut commodo luctus, libero velit consectetur."
     },
     {
         id: 4,
         name: "wendy woo",
-        image: "https://cdn.pixabay.com/photo/2020/09/18/15/38/woman-5582147_1280.jpg",
+        image: "https://previews.dropbox.com/p/thumb/ACKPfQW-wrwniCsceHEjU8nmJ4GAHSTscxH4R6UpTXiU6_dmGFAAf0U6KllvcX81tcTWts_2oW3zTIiOCHS80POG6V6VVqTc59zEX4TH0cH8txNZ_vK_BxElKcZ7OkvXcHH9O7ovnrSi3cprheAPb3pTu0EjUbHoDskdn154YmhBMBipuyrzSVb4MYbVrOvhTImGzDWfKPxcc6turF2_MOhWt_V2prcu-V-xMBqigXXqb1liTdxD-KQ2Snj6zB7q9mXcn5llqIVs_O1yeVDyGcIh-7deCxE9KlbaQD_J-cS3ZemG7lfxy1XOyqoSXFwDDk1rW1s0cr_UxlNLSs192NiI/p.jpeg",
         job: "web designer",
         text: "Dolor sit amet, consectetur adipiscing elit. Fusce ac tristique odio. Praesent euismod justo ac sapien congue, in ullamcorper nunc malesuada. Integer in ipsum at lorem volutpat lacinia."
     },

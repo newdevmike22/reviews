@@ -6,6 +6,31 @@ const App = () => {
   const [person, setPerson] = useState(0);
   const { name, image, job, text } = people[person];
 
+  const checkNumber = (number) => {
+    if (number > people.length - 1) {
+      return 0;
+    }
+    if (number < 0) {
+      return people.length - 1;
+    }
+    return number;
+  };
+
+  const nextPerson = () => {
+    setPerson((currentPerson) => {
+      const newPerson = currentPerson + 1;
+      return checkNumber (newPerson);
+    });  
+  };
+
+  const prevPerson = () => {
+    setPerson((currentPerson) => {
+      const newPerson = currentPerson - 1;
+      return checkNumber (newPerson);
+    });
+  };
+
+
   return (
     <main className="min-h-[100vh] grid place-items-center">
       <article className="review">
@@ -18,8 +43,24 @@ const App = () => {
           </span>
         </div>
         <h1 className="text-[1.6rem] font-semibold capitalize mb-1">{name}</h1>
-        <p className="text-[1rem] text-[#2d02c7] uppercase font-semibold mb-5 tracking-wide">{job}</p>
+        <p className="text-[1rem] text-[#2d02c7] uppercase font-semibold mb-4 tracking-wide">{job}</p>
         <p className="text-[0.95rem] text-[#64748b] mb-3 leading-normal">{text}</p>
+        <div className="mb-[1rem]">
+          <button 
+            className="text-[1.25rem] text-[#3c3799] bg-transparent border-transparent hover:text-[#fc0320] 
+                       my-0 mx-2 cursor-pointer transition-all duration-300 ease-in-out h-full"
+            onClick={prevPerson}
+          >
+            <FaChevronLeft />
+          </button>
+          <button 
+            className="text-[1.25rem] text-[#3c3799] bg-transparent border-transparent hover:text-[#fc0320] 
+                       my-0 mx-2 cursor-pointer transition-all duration-300 ease-in-out h-full"
+            onClick={nextPerson}
+          >
+            <FaChevronRight />
+          </button>
+        </div>
       </article>
     </main>
   )
