@@ -30,6 +30,13 @@ const App = () => {
     });
   };
 
+  const randomPerson = () => {
+    let randomNumber = Math.floor(Math.random() * people.length);
+    if (randomNumber === person) {
+      randomNumber = person + 1;
+    }
+    setPerson(checkNumber(randomNumber));
+  };
 
   return (
     <main className="min-h-[100vh] grid place-items-center">
@@ -61,6 +68,9 @@ const App = () => {
             <FaChevronRight />
           </button>
         </div>
+        <button className="btn btn-hipster" onClick={randomPerson}>
+          surprise me
+        </button>
       </article>
     </main>
   )
